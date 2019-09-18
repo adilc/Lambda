@@ -1,4 +1,5 @@
 import boto3
+#Clean EBS Volumes that are not attached to EC2
 
 def lambda_handler(object, context):
     ec2_client = boto3.client('ec2')
